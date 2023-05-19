@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600;700&display=swap");
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('background.gif');
+    background-size: cover;
+}
+
+        /*For the header*/
+    .title {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title h1{
+        color: #FFFFFF;
+        font-size: 30px;
+        animation: beat 0.5s infinite alternate ease;
+        transform-origin: center;
+    }
+
+    @keyframes beat{
+        to { transform: scale(1.1); }
+    }
+
+    .title p {
+        color: #FFFFFF;
+        font-size: 15px;
+    }
+
+    .container {
+        width: 700px;
+        height: auto;
+        margin: 0 auto;
+        padding: 2%;
+        margin-top: 30vh;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 20px; 
+        overflow: hidden; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+    
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            text-align: left;
+            outline: none;
+            border-bottom: 1px solid black;
+            font-size: 15px;
+            transition: 0.4s;
+            overflow: hidden; 
+        }
+
+        span {
+            font-weight: bold;
+            color: black;
+        }
+        
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+        
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        
+        .active:after {
+            content: "\2212";
+        }
+        
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        
+
+/*RESPONSIVE*/
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+  
