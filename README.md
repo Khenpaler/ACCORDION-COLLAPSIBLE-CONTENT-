@@ -3,4 +3,4 @@
 CREATED by: Khen Harold P. Paler IT2R5
 
 
-PUBLISHED WEBPAGE: 
+PUBLISHED WEBPAGE: https://khenpaler.github.io/ACCORDION-COLLAPSIBLE-CONTENT-/
